@@ -1,3 +1,6 @@
+// declare medsc variable
+var medsc;
+
 window.onload = function () {
   
     var seconds = 0; 
@@ -6,7 +9,6 @@ window.onload = function () {
     var appendSeconds = document.getElementById("seconds")
     var buttonStart = document.getElementById('button-start');
     var buttonStop = document.getElementById('button-stop');
-    var buttonReset = document.getElementById('button-reset');
     var Interval ;
   
     buttonStart.onclick = function() {
@@ -19,18 +21,19 @@ window.onload = function () {
          clearInterval(Interval);
   
   
-    // Calculate points
-  
+    // Calculate points  
       if(seconds >= 5)
       {
         medsc = 5*seconds;
         console.log(medsc);
+
+        // if score calculated, call badges.js
+        var script = document.createElement('script');
+        script.setAttribute('type', 'text/javascript');
+        script.setAttribute('src', '/js/badges.js');
+        document.head.appendChild(script);
       }
-      medsc = 5;
-      console.log(medsc);
-    
   }
-  
     
     function startTimer () {
       tens++; 
@@ -53,9 +56,6 @@ window.onload = function () {
       
       if (seconds > 9){
         appendSeconds.innerHTML = seconds;
-      }
-    
-    }
-    
+      }   
+    }    
   }
-  
