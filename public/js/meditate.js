@@ -59,3 +59,7 @@ window.onload = function () {
       }   
     }    
   }
+
+// Print value sent to client from server 
+var clientjsVar = document.querySelector("#clientVar").textContent;
+document.querySelector("#emptyp").textContent = clientjsVar;
