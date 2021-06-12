@@ -7,7 +7,7 @@
 
 ### How to run the project
 - Make sure you have Node.js installed in your system.
-- git clone `https://github.com/Swatilekha-Roy/Data-bartering-server-and-client-Node.js`
+- Run `git clone https://github.com/Swatilekha-Roy/Data-bartering-server-and-client-Node.js` on your command prompt.
 Next, run these commands on your command prompt in the root of your project directory.
 - `npm i`
 - `node app.js` or `npm run dev` (Second one preferred, because it auto restarts your server).
