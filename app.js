@@ -22,8 +22,9 @@ app.use(express.json({
 }));
 
 // Rendering index file
+var clientvar = "I am sent from server to client";
 app.get("/", function (req, res) {
-    res.render("index");
+    res.render("index", {clientvar});
 })
 
 // Reading data from variables.json
