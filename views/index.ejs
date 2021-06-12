@@ -5,8 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-    <script src="js/meditate.js"></script>  
 </head>
 
 <body>
@@ -16,8 +14,12 @@
         <button id="button-stop">Stop</button>
     </div> 
 
-    <!-- Uncomment below script for testing the POST in less time -->
-    <!-- <script src="js/badges.js"></script>   -->
+    <!-- Print value sent to client from server -->
+    <p id="clientVar" style="display: none;"><%= clientvar %></p>
+    <p id="emptyp"></p>
+    
+    <script src="js/meditate.js"></script>  
+    <script defer src="js/badges.js"></script>   
 </body>
 
 </html>
